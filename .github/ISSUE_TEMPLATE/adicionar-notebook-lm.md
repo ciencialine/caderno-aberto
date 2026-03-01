@@ -1,37 +1,83 @@
 ---
 name: Adicionar Notebook LM
-about: Adicionar contribuição de Notebook LM com conteúdo BNCC
-title: Contribuição Notebook LM
-labels: 'notebook-lm'
-assignees: ''
-
----
-
-Instruções de como contribuir [https://ciencialine.github.io/aulas/contribuindo/](https://ciencialine.github.io/aulas/contribuindo/)
-
-* **Ano**
-  _Exemplo: 9o ano_
-
-* **Disciplina:**
-  _Exemplo: Ciências_
-
-* **Titulo resumido:**
-  _Exemplo: Evolução dos Modelos Atômicos_
-
-* **Título Notebook LM:**
-  _Exemplo: Evolução dos Modelos Atômicos_
-
-* **Link Notebook LM:**
-  _Exemplo: Evolução dos Modelos Atômicos_
-
-* **Unidade temática:**
-  _Exemplo: Evolução dos Modelos Atômicos_
-
-* **Objeto de conhecimento:**
-  _Exemplo: Evolução dos Modelos Atômicos_
-
-* **Código BNCC:**
-  _Exemplo: Evolução dos Modelos Atômicos_
-
-* **Habilidade:**
-  _Exemplo: Evolução dos Modelos Atômicos_
+description: Adicionar contribuição de Notebook LM com conteúdo BNCC
+title: "Contribuição Notebook LM"
+labels: [notebook-lm]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Instruções de como contribuir [https://ciencialine.github.io/aulas/contribuindo/](https://ciencialine.github.io/aulas/contribuindo/)
+  - type: input
+    id: ano
+    attributes:
+      label: Ano
+      description: Exemplo: 9o ano
+      placeholder: 9o ano
+    validations:
+      required: true
+  - type: input
+    id: disciplina
+    attributes:
+      label: Disciplina
+      description: Exemplo: Ciências
+      placeholder: Ciências
+    validations:
+      required: true
+  - type: input
+    id: titulo_resumido
+    attributes:
+      label: Título resumido
+      description: Exemplo: Evolução dos Modelos Atômicos
+      placeholder: Evolução dos Modelos Atômicos
+    validations:
+      required: true
+  - type: input
+    id: titulo_notebook
+    attributes:
+      label: Título Notebook LM
+      description: Exemplo: Evolução dos Modelos Atômicos
+      placeholder: Evolução dos Modelos Atômicos
+    validations:
+      required: true
+  - type: input
+    id: link_notebook
+    attributes:
+      label: Link Notebook LM
+      description: Cole o link do notebook LM
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: unidade_tematica
+    attributes:
+      label: Unidade temática
+      description: Exemplo: Evolução dos Modelos Atômicos
+      placeholder: Evolução dos Modelos Atômicos
+    validations:
+      required: true
+  - type: input
+    id: objeto_conhecimento
+    attributes:
+      label: Objeto de conhecimento
+      description: Exemplo: Evolução dos Modelos Atômicos
+      placeholder: Evolução dos Modelos Atômicos
+    validations:
+      required: true
+  - type: input
+    id: codigo_bncc
+    attributes:
+      label: Código BNCC
+      description: Exemplo: EF09CI01
+      placeholder: EF09CI01
+    validations:
+      required: true
+  - type: textarea
+    id: habilidade
+    attributes:
+      label: Habilidade
+      description: Exemplo: Identificar e analisar os modelos atômicos ao longo da história.
+      placeholder: Descreva a habilidade BNCC relacionada
+    validations:
+      required: true
