@@ -4,4 +4,4 @@
 
 [https://notebooklm.google.com/](https://notebooklm.google.com/)
 
-[https://github.com/ciencialine/aulas/issues/new?template=adicionar-notebook-lm.md](https://github.com/ciencialine/aulas/issues/new?template=adicionar-notebook-lm.md)
+[https://github.com/ciencialine/aulas/issues/new?template=adicionar-notebook-lm.yaml](https://github.com/ciencialine/aulas/issues/new?template=adicionar-notebook-lm.yaml)
