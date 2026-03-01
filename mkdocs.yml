@@ -4,6 +4,15 @@ repo_name: ciencialine/aulas
 repo_url: https://github.com/ciencialine/aulas
 nav:
   - Home: index.md
+  - 6o ano:
+    - Ciências:
+      - Camadas internas da terra: 6/ciencias/camadas-internas-da-terra.md
+      - Hidrosfera: 6/ciencias/hidrosfera.md
+  - 9o ano:
+    - Ciências:
+      - Evolução dos modelos atômicos: 9/ciencias/evolucao-dos-modelos-atomicos.md
+      - Elemento e substância química: 9/ciencias/elemento-e-substancia-quimica.md
+      - Estados físicos da matéria: 9/ciencias/estados-fisicos-da-materia.md
   - Manifesto: manifesto.md
 theme:
   name: material
