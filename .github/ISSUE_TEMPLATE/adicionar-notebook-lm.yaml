@@ -46,7 +46,7 @@ body:
     attributes:
       label: Link Notebook LM
       description: Cole o link do notebook LM
-      placeholder: https://...
+      placeholder: https://notebooklm.google.com/...
     validations:
       required: true
   - type: input
