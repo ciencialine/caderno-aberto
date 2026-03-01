@@ -9,6 +9,12 @@ assignees: ''
 
 Instruções de como contribuir [https://ciencialine.github.io/aulas/contribuindo/](https://ciencialine.github.io/aulas/contribuindo/)
 
+* **Ano**
+  _Exemplo: 9o ano_
+
+* **Disciplina:**
+  _Exemplo: Ciências_
+
 * **Titulo resumido:**
   _Exemplo: Evolução dos Modelos Atômicos_
 
