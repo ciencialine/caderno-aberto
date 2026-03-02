@@ -1,4 +1,4 @@
-# manifesto
+# Manifesto
 
 Sou professora de escola pública. Já lecionei em escolas particulares e vi de perto algo que não pode ser ignorado: o acesso ao conhecimento e às oportunidades não é distribuído de forma justa.
 
