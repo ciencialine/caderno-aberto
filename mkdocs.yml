@@ -1,7 +1,7 @@
-site_name: Aulas
-site_url: https://ciencialine.github.io/aulas/
-repo_name: ciencialine/aulas
-repo_url: https://github.com/ciencialine/aulas
+site_name: Cderno Aberto
+site_url: https://ciencialine.github.io/caderno-aberto/
+repo_name: ciencialine/caderno-aberto
+repo_url: https://github.com/ciencialine/caderno-aberto
 nav:
   - Home: index.md
   - 6o ano:
