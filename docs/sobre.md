@@ -24,7 +24,7 @@ disponíveis com o tempo para cobrir novas áreas e habilidades da BNCC.
 
 ## Detalhes técnicos
 
-- https://github.com/ciencialine/caderno-aberto/
+- [https://github.com/ciencialine/caderno-aberto/](https://github.com/ciencialine/caderno-aberto/)
 - arquivos formato markdown (.md)
 - github actions + github pages
 - github pages gerado por mkdocs e material
