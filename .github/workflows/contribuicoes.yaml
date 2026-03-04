@@ -1,0 +1,48 @@
+name: contribuicoes-issues
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Processa contribuições
+        run: |
+          ./issues.sh
+          ./build-mkdocs.sh
+
+      - name: Commita e envia as alterações
+        run: |
+          # Configura o usuário do git como o bot do GitHub Actions
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Adiciona os arquivos modificados
+          git add .
+          
+          # Verifica se há mudanças reais antes de commitar (evita erro no workflow)
+          if git diff-index --quiet HEAD --; then
+            echo "Nenhuma alteração para commitar."
+            exit 1
+          else
+            git commit -m "chore: atualiza arquivos via GitHub Actions [skip ci]"
+            git push
+          fi
+
+      - name: Configure Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
