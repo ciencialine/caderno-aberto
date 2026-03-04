@@ -17,7 +17,7 @@ jobs:
         env:
           TOKEN_ISSUES: ${{ secrets.TOKEN_ISSUES }}
         run: |
-          ./issues.sh
+          ./issues.sh | tee /tmp/commit_msg.txt
           ./build-mkdocs.sh
 
       - name: Commita e envia as alterações
@@ -31,7 +31,8 @@ jobs:
             echo "Nenhuma alteração para commitar."
             exit 1
           else
-            git commit -m "chore: atualiza arquivos via GitHub Actions [skip ci]"
+            COMMIT_MSG=$(cat /tmp/commit_msg.txt)
+            git commit -m "$COMMIT_MSG" -m "[skip ci]"
             git push
           fi
 
