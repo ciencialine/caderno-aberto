@@ -4,7 +4,7 @@
 
 ## Notebook LM
 
-### [Células: Definições, Estruturas e Funções Vitais](https://notebooklm.google.com/notebook/ba737f05-20ca-4d65-984c-c301dfdc2bff/preview)
+### [Células: Definições, Estruturas e Funções Vitais](https://notebooklm.google.com/notebook/ba737f05-20ca-4d65-984c-c301dfdc2bff)
 
 ---
 
